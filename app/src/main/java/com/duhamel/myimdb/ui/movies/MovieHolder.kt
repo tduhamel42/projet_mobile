@@ -33,7 +33,6 @@ class MovieHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val f = MovieDetailsFragment()
         val args = Bundle()
         args.putString("id", movie.id)
-        println(movie.id)
         f.arguments = args
         itemView.setOnClickListener{
             (it.context as AppCompatActivity).supportFragmentManager.commit {
